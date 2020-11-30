@@ -18,6 +18,10 @@ public class IterateUsingLambda {
 		 }
 
         // Please Implement Lambda Iteration on itemPrice map
+        itemPrice.forEach((key, value) -> {
+            System.out.println(key);
+            System.out.println(value);
+        });
 
     }
 }

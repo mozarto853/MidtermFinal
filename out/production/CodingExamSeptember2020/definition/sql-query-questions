@@ -1,35 +1,54 @@
+
 This file contains SQL questions.
 Please read the questions and answer.
 
 What is Database?
-A.
+A.An organized collection of data
 
 What is DBMS?
+Database management system.
+
 What is the difference between SQL and MySQL?
+Sql are commands while mySql is a rdbms
 What is RDBMS? How is it different from DBMS?
+Relational Database
+
 What are Tables and Fields?
+Table is a collection of similar data in a database while the fields are the individual data itself
+
 What is SQL?
+Structure Query Language
+
 What are Constraints in SQL?
+MySQL can only create tables
+
 What is a Primary Key?
+A field in a table that uniquely identifies each record in a database
+
 What is a Foreign Key?
+Something that is used to link two different tables together
+
 What is Normalization?
+Process of organizing data in a database to get rid of repetition in data
+
 What is Denormalization?
+Combining data from various tables into a single table. It increases performance
 
 You have 2 tables given below.
 
 Order Table:
 
-OrderID	 CustomerID	  OrderDate
-20508	    1	      2014-09-10
-30407	    2	      2016-09-19
-40250	    10	      2020-03-20
+OrderID     CustomerID      OrderDate
+20508      1        2014-09-10
+30407      2        2016-09-19
+40250      10       2020-03-20
 
 Customer Table:
 
-CustomerID	   CustomerName	    CustomerPhone	     Country
-1              John Dave	    1-718-203-9087	     Australia
-2	           Brian Gary	    1-646-789-3489	     USA
-3	           Chris Brown	    1-212-342-7843       Canada
+CustomerID    CustomerName        CustomerPhone       Country
+1              John Dave       1-718-203-9087      Australia
+2             Brian Gary      1-646-789-3489      USA
+3             Chris Brown     1-212-342-7843       Canada
 
 Please do the following on above Order table and Customer table:
 
@@ -39,8 +58,7 @@ Right Join:
 Full Join:
 
 On Customer Table, please Insert one row.
+Insert Into Customer(CustomerName, CustomerPhone, Country)values(‘Prity’,’347-357-567’,’NY);
 
 On Order Table, please Update one row.
-
-
-
+Insert Into Order(OrderID,CustomerID,OrderDate)(values(‘3434’,’11’,’2020-20-11’);

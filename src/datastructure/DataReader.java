@@ -1,8 +1,11 @@
 package datastructure;
 
+import java.io.*;
+import java.util.Scanner;
+
 public class DataReader {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		/*
 		 * User API to read the below textFile and print to console.
 		 * Use BufferedReader class. 
@@ -16,10 +19,29 @@ public class DataReader {
 		 * Use For Each loop/while loop/Iterator to retrieve data.
 		 */
 
-		String textFile = System.getProperty("user.dir") + "/src/data/self-driving-car.txt";
+		//String textFile = System.getProperty("user.dir") + "/src/data/self-driving-car.txt";
+
+		/* MY FILEPATH WOULDNT WORK EVEN WHEN I TRIED OTHER PEOPLE'S ANSWERS OR FOLLOWING THE
+		BASIC WAY TO DO IT
+
+
+		File file = new File("/src/data/self-driving-car.txt");
+
+		String filePath = "self-driving-car.txt";
+		FileReader fr = null;
+		BufferedReader br = null;
+
+		fr = new FileReader(filePath);
+		br = new BufferedReader(fr);
+		String data = "";
+		while((data = br.readLine()) !=null){
+			System.out.println(data);  */
+
+
+		}
 
 
 
 	}
 
-}
+

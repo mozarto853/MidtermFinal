@@ -19,6 +19,9 @@ public class CsvReader {
         String cvsSplitBy = ",";
         BufferedReader br = null;
         List<Trainee> roster = new ArrayList<Trainee>();
+        double sum = 0;
+        int count = 0;
+        double avg = 0;
 
         try {
             br = new BufferedReader(new FileReader(csvFilePath));
@@ -62,6 +65,13 @@ public class CsvReader {
                 System.out.println(student.getFirstName() + " " + student.getLastName() + " " + student.getNumberOfExercisesSolved());
             }
         }
+
+        for(Trainee student : roster){
+            sum += student.getNumberOfExercisesSolved();
+            count++;
+        }
+        avg = sum / count;
+        System.out.println("Class average " + avg);
 
     }
 

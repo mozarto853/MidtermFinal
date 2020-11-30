@@ -23,7 +23,12 @@ public class UnitTestSorting {
         String value = "i am waiting";
         Assert.assertEquals("i am waiting...",value);
         //Now implement Unit test for rest of the soring algorithm...................below
-
+        sort.insertionSort(unSortedArray);
+        try {
+            Assert.assertEquals(sortedArray, unSortedArray, "Array is not sorted");
+        } catch (Exception ex) {
+            ex.getMessage();
+        }
 
     }
 }
